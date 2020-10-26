@@ -5,5 +5,12 @@ import (
 )
 
 func main() {
-	fmt.Println("za wa ru do!")
+	var s string = "shalom"
+
+	l := len(s)
+	var i int
+	for i < l {
+		fmt.Printf("%c\n", s[i])
+		i++
+	}
 }
