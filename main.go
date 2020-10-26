@@ -6,10 +6,11 @@ import (
 	"time"
 )
 
+// 猜数字游戏，定义一个要猜的数字，由rand.Intn函数产生随机数与定义的数进行比较
 func main() {
-	num := 996
-	min := 0
-	max := 1001
+	num := 996  // 要猜的数字
+	min := 0    // 产生随机数区间最小值
+	max := 1001 // 产生随机数区间最大值
 	n := rand.Intn(max-min-1) + min + 1
 	for num != n {
 		fmt.Printf("数字为：%2v\n", n)
