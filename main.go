@@ -22,5 +22,5 @@ func main() {
 		n = rand.Intn(max-min-1) + min + 1
 		time.Sleep(time.Second)
 	}
-	fmt.Println("greet!")
+	fmt.Printf("n:%v, greet!\n", n)
 }
