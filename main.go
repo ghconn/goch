@@ -124,8 +124,8 @@ func slicetoanother(lst *list.List, otherlst *list.List, start int, end int) { /
 func splice(lst *list.List, start int, end int) { // [start, end)
 	var tempelement *list.Element
 	for i, x := 0, lst.Front(); x != nil && i < end; i, x = i+1, tempelement {
+		tempelement = x.Next()
 		if i >= start {
-			tempelement = x.Next()
 			lst.Remove(x)
 		}
 	}
